@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="refresh" content="5;url=./automated-forms.html" />
+  <title>Loading, please wait…</title>
+</head>
+
+<body style="
+  height:100vh;
+  margin:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#ffffff;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+">
+
+  <div style="
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:14px;
+  ">
+    
+    <!-- Spinner -->
+    <div class="spinner"></div>
+
+    <!-- Text -->
+    <div style="
+      color:#000000;
+      font-size:14px;
+      letter-spacing:0.3px;
+    ">
+      Loading, please wait…
+    </div>
+  </div>
+
+  <style>
+    .spinner {
+      width:48px;
+      height:48px;
+      border-radius:50%;
+      border:3px solid rgba(0,0,0,0.2);
+      border-top-color:#000000;
+      animation: spin 0.9s linear infinite;
+      box-sizing: border-box;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+
+</body>
+</html>
